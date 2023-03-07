@@ -4,46 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Raleway:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Contact US</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Contact Me</a></li>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./home.html#projects1">Projects</a></li>
+                <li><a href="./home.html#skills1">Skills</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
+    <section class="contact">
         <h1>Contact Me.</h1>
         <form action="">
-            <span>I am always happy to hear from you.</span>
+            <span id="happy">I am always happy to hear from you.</span>
             <br>
             <fieldset>
                 <legend>Contact Details</legend>
-                <label>Name: <input type="text"></label>
+                <input type="text" id="name" placeholder="Name">
                 <br>
-                <label>Email Address: <input type="email"></label>
+                <input type="email" id="name" placeholder="Email Address"></label>
                 <br>
-                    <label>What is your time zone?</label> </br>
-                    <label>Americas<input type="checkbox" name="timezone" value="americas"></label>
-                    <label>Europe/Africa<input type="checkbox" name="timezone" value="europe/africa"></label>
-                    <label>Middle East<input type="checkbox" name="timezone" value="middleeast"></label>
-                    <label>Asia/Australasia<input type="checkbox" name="timezone" value="asia/australasis"></label>
+                    <label id="timeZone">What is your time zone?</label> </br>
+                    <ul>
+                        <li>   <label>Americas<input type="checkbox" name="timezone" value="americas"></label> </li>
+                        <li>    <label>Europe/Africa<input type="checkbox" name="timezone" value="europe/africa"></label></li>
+                        <li>   <label>Middle East<input type="checkbox" name="timezone" value="middleeast"></label></li>
+                        <li>   <label>Asia/Australasia<input type="checkbox" name="timezone" value="asia/australasis"></label></li>
+                    </ul>    
                 </br>    
-                <label>Please write your message here:<label>
+                <textarea rows="10" cols="100" placeholder="Please write your message here"></textarea></label>
                 <br>
-                <textarea rows="10" cols="100" placeholder="......."></textarea></label>
-                <br>
-                <input type="submit">
-
+                <div id="submit">
+                <input type="submit"  id="submit1">
+                </div>
 
             </fieldset>
         </form>
+    </section>
+
+    <section>
 
     </section>
 </body>

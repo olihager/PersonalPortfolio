@@ -4,60 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Raleway:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Personal Portfolio</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Contact Me</a></li>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="#projects1">Projects</a></li>
+                <li><a href="#skills1">Skills</a></li>
+                <li><a href="./contact.html"> Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <hgroup>
-        <h1>Hi</h1>
-        <h1>I'm Oliver,</h1>
-        <h1>Web Developer</h1>
-        <h5>Bilingual (Englsh/Spanish) Full Stack Web Developer</h2>
-        </hgroup>
-        <a href=" " class="button">Contact Me</a>
-            
+    <section class="presentation">
+        <div class="node">
+            <h1>Hi,</h1>
+            <h1 id="oliver">I'm </h1> <h1 id="oliver2">Oliver.</h1>
+            <h1 id="goal">An Aspiring Web Developer</h1>
+            <br>
+            <br>
+            <a href=" " class="button" id="stbutton">Message Me</a>
+        </div>
+        <div id="stairs">
+            <div id="firstBar"></div>
+            <div id="secondBar"></div>
+            <div id="thirdBar"></div>
+            <div id="fourthBar"></div>
+            <div id="fifthBar"></div>
         </div>
     </section>
 
     <section class="about">
-        <h1>ABOUT ME</h1>
-        <h2>Design. Create. Develop.</h2>
-        <h5>An Englishman working out of Buenos Aires, Argentina.</h5>
-        <h5>My passion is to craft simple yet beautiful websites while focusing on a sharp user experience</h5>
+        <h1>Design. Create. Develop.</h1>
+        <h5>My goal is to craft simple yet beautiful web applications while focusing on an engaging user experience.    </h5>
     </section>
+    
+    
 
-    <section class="projects">
+    <section class="projects" id="projects1">
         <h1>PROJECTS</h1>
-        <figure>
-            <img src="./Colorful Modern Typography T-shirt.png">
-            <figcaption>Project 1</figcaption>
-        </figure>
-        <figure>
-            <img src="./pushYourLimit.png">
-            <figcaption>Project 2</figcaption>
-        </figure>
-        <figure>
-            <img src="./keepLifeSimple.png">
-            <figcaption>Project 3</figcaption>
-        </figure>
+        <div class="images">
+            <figure>
+                <img src="./Colorful Modern Typography T-shirt.png">
+                <figcaption>Project 1</figcaption>
+            </figure>
+            <figure>
+                <img src="./pushYourLimit.png">
+                <figcaption>Project 2</figcaption>
+            </figure>
+            <figure>
+                <img src="./keepLifeSimple.png">
+                <figcaption>Project 3</figcaption>
+            </figure>
+        </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills1">
         <h1>SKILLS</h1>
         <ul>
-            <li>HTML 5</li>
-            <li>CSS</li>
+            <li>HTML 5 / CSS</li>
             <li>Javascript</li>
+            <li>React</li>
         </ul>
     </section>
 </body>

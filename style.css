@@ -1,0 +1,348 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-rows:  0.025fr 1.3fr 0.8fr 0.8fr 0.8fr;
+    gap: 2em 0em;
+}
+
+header {
+    grid-column: 2 / span 4;
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    align-items: center;
+    justify-items: end;
+}
+
+.nav{ 
+    grid-column: 4 / span 2;
+    margin-right: 2em;
+    
+}
+
+
+.nav ul li {
+    list-style-type: none;
+    display: inline;
+    font-size: 0.9em;
+    padding: 0.5em 1.2em 0.5em 1.2em ; /*top right bottom left  */
+    margin: -5px;
+    border-top: 4px solid #365673;
+    border-bottom: 2px solid #365673;
+    letter-spacing: 0.2em;
+    
+}
+
+a {
+    text-decoration: none;
+    font-family: Raleway;
+    font-weight: 600; 
+    
+}
+
+.contact {
+    display: grid;
+    grid-row: 2/ span 3;
+    grid-column: 3 / span 2;
+    justify-items: center;
+    background-color: whitesmoke;
+    border-radius: 1em;
+}
+
+.contact h1 {
+    font-family: amatic sc;
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+}
+
+#happy {
+    font-family: raleway;
+    font-size: 1.5em;
+    display: grid;
+    justify-items: center;
+    margin-bottom: 0.5em;
+}
+
+fieldset {
+    display: grid;
+    border-radius: 1em;
+    border: 2px solid #5A6E73;
+  
+}
+
+#name {
+    padding: 0.5em 0em 0.5em 0em;
+    margin-top: 1em;
+    
+    color: whitesmoke;
+}
+
+#timeZone {
+    text-align: center;
+    font-family: raleway;
+}
+
+fieldset ul {
+    text-align: center;
+    padding-inline-start: 0em;
+}
+
+fieldset ul li {
+    display: inline;
+    margin-left: 1.5em;
+    font-family: raleway;
+    font-size: 1em;
+    
+}
+
+fieldset legend {
+    text-align: center;
+    font-family: raleway;
+    letter-spacing: 0.5em;
+}
+
+#submit {
+    display: grid;
+    justify-items: center;
+    font-family: raleway;
+    
+
+}
+
+input {
+    font-family: raleway;
+    font-size: 1.25em;
+}
+
+#submit1{
+    font-size: 1.25em;
+    background-color: #A4A676;
+    color: whitesmoke;
+    border-radius: 0.25em;
+    border: 1px solid #365673;
+}
+
+textarea {
+    font-family: raleway;
+    font-size: 1em;
+   
+}
+
+.presentation {
+    grid-row: 2 / span 1;
+    grid-column: 2/ span 4;
+    grid-auto-flow: column; /*when using grid.. two divs on same row */
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.325fr 0.325fr 0.325fr 0.325fr;
+    margin-top: -25px;
+    /* padding: 1em */
+    /* display: grid;
+    align-items: end; */
+    /* gap: 1em; */
+}
+
+.presentation h1 {
+    font-family: amatic sc;
+    font-size: 4.5em;
+    color: #323D40;
+    /* letter-spacing: 0.1em; */
+}
+
+#oliver {
+    display: inline;
+    word-spacing: 0.5em;
+    
+}
+
+#oliver2 {
+    display: inline;
+    letter-spacing: 0.25em;
+
+}
+
+#goal {
+    letter-spacing: 0.2em;
+    font-size: 2.2em;
+    word-spacing: 0.5em;
+    color: #323D40;
+}
+
+.node {
+    /* border: 1px solid; */
+    padding-left: 2em;
+    padding-top: 2em;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    /* width: 50%; */
+}
+
+#stairs {
+    /* border: 1px solid; */
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 2;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; /*use repeat function there is a quicker way*/
+    
+}
+
+#firstBar {
+    grid-column: 1/ span 5;
+    grid-row: 5 / span 1;
+    /* border-top: solid 1px black; */
+    background-color:  #365673;
+}
+
+#secondBar {
+    grid-column: 2 / span 4;
+    grid-row: 4 / span 1;
+    /* border-top: 1px solid black; */
+    background-color:  #A4A676;
+}
+
+#thirdBar {
+    grid-column: 3 / span 3;
+    grid-row: 3 / span 1;
+    /* border-top: 1px solid black; */
+    background-color: #5A6E73;
+}
+
+#fourthBar {
+    grid-column: 4 / span 2;
+    grid-row: 2 / span 1;
+    /* border-top: 1px solid black; */
+    background-color: #C9E2F2
+}
+
+#fifthBar {
+    grid-column: 5 / span 1;
+    grid-row: 1 / span 1;
+    /* border-top: 1px solid black; */
+    background-color: #8C8846;
+}
+
+.about {
+    
+    
+    
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    background-color: whitesmoke;
+}
+
+.about h1 {
+    font-family: Raleway;
+    font-size: 4em;
+    grid-column: 1 / span 3;
+    margin-top: 1em;
+    align-items: center;
+    color: #323D40;
+    
+}
+
+.about h5 {
+    font-family: Raleway;
+    font-size: 1.25em;
+    grid-column: 1 / span 3;
+    align-items: start;
+    color: #465559;
+    
+}
+
+.projects {
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 4;
+    border: 4px solid;
+    background-color: whitesmoke;
+    text-align: center;
+    color: #465559;
+    font-family: raleway;
+    font-weight: 900;
+    letter-spacing: 0.5em;
+}
+
+.projects h1 {
+    font-family: amatic sc;
+    font-weight: 800;
+    font-size: 3.5em;
+    color: black;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 15em;
+    height: auto;
+    margin-bottom: 1em;
+   
+   
+}
+
+.skills {
+    
+    grid-row: 5 / span 1;
+    grid-column: 2 / span 4;
+    background-color: whitesmoke;
+    justify-items: center;
+    text-align: center;
+    font-family: amatic sc;
+    font-weight: 800;
+    letter-spacing: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    
+    
+}
+
+.skills h1 {
+    grid-column: 1 / span 3;
+    grid-row: 1/ span 1;
+    font-size: 3.5em;
+    
+}
+
+.skills ul {
+    grid-column: 1 / span 3;
+    grid-row: 2 /  span 1;
+    align-items: start;
+    justify-items: center;
+    padding-inline-start: 0em;
+    padding: 0.5em 4.5em 0.5em 4.5em;
+    border: 3px solid #365673;
+    font-family: raleway;
+    font-size: 2em;
+}
+
+.skills li {
+    list-style-type: none;
+    display: inline;
+    letter-spacing: 0em;
+    font-size: 0.75em;
+    margin-left: 2em;
+    margin-right: 2em;
+    
+    
+    
+}
+
+
+.button {
+    border: solid 2px #365673;
+    border-radius: 0.2em;
+    padding: 0.5em 1em 0.5em 1em;
+    margin-bottom: 1em;
+    background-color: #82B3BF;
+    color: white ;
+    letter-spacing: 0.1em;
+}
