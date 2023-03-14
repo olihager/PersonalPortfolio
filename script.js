@@ -103,8 +103,19 @@ list[2].onmouseout = reverseNav;
 list[3].onmouseout = reverseNav;
 
 
+function changeBorder() {
+    event.target.style.backgroundColor = "#FFAF69";
+}
 
+let name1 = document.getElementsByClassName('name');
 
+name1.addEventListener("click", changeBorder);
+
+function reverseBorder() {
+    event.target.style.backgroundColor = 'whitesmoke';
+}
+
+name1.addEventListener('mouseout', reverseBorder);
 
 
 
